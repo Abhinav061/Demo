@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+
+<body>
+    <h2>Array = [1,2,3,4,5,6,7,8,9]</h2>
+    <p>Enter a Array:
+        <input type="text" id="num">
+        <button onclick="displaypo()">Click here</button>
+    <p id=demo1></p>
+
+    <script>
+        var arr = [1,2,3,4,5,6,7,8,9]
+        function displaypo() {
+            var nk = parseInt(document.getElementById('num').value);
+            var k = arr.indexOf(nk);
+            document.getElementById("demo1").innerHTML = k;
+        }
+    </script>
+</body>
+</html>

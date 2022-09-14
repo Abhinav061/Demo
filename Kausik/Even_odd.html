@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even odd</title>
+</head>
+
+<body>
+    <p>Enter a number :
+        <input type="text" id="num">
+        <button onclick="displayEv()">Click here</button>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        function displayEv() {
+            var num = parseInt(document.getElementById('num').value);
+            if(num % 2 == 0) {
+                document.getElementById("demo").innerHTML = (num +"The number is even.");
+            }
+        else {
+            document.getElementById("demo").innerHTML = ("The number is odd.");
+    }
+        }
+    </script>
+
+</body>
+
+</html>

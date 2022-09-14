@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array sum</title>
+</head>
+
+<body>
+
+    <h2>Array = [1,2,3,4,5]</h2>
+    <p id="demo"></p>
+    <button onclick="fn()">SUM</button>
+
+
+    <script>
+        const numbers = [1, 2, 3, 4, 5];
+        let sum = numbers.reduce(my);
+        
+        function my(a, b) {
+            return a + b;
+        }
+
+        function fn() {
+            document.getElementById("demo").innerHTML = "The sum is " + sum;
+        }
+    </script>
+
+</body>
+</html>

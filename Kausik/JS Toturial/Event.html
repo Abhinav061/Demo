@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <element event='some JavaScript'>
+</head>
+
+<body>
+    <!--onclick Event-->
+    <h2>JavaScript HTML Events</h2>
+    <h3>onclick Event</h3>
+    <p> changes the content of the element with id="demo".</p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+
+    <p>changes the content of its own element (using this.innerHTML):</p>
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+
+    <p>Using Function</p>
+    <button onclick="displayDate()">The time is?</button>
+    <script>
+        function displayDate() {
+            document.getElementById("demo1").innerHTML = Date();
+        }
+    </script>
+    <p id="demo1"></p>
+
+    <h3>onchange</h3>
+    <button onchange="this.innerHTML=Date()">The time is?</button>
+
+    <h3>onmouseover</h3>
+    <button onmouseover="this.innerHTML=Date()">The time is?</button>
+
+    <h3>onmouseout</h3>
+    <button onmouseout="this.innerHTML=Date()">The time is?</button>
+
+    <h3>onkeydown</h3>
+    <button onkeydown="this.innerHTML=Date()">Click and press any key</button>
+
+    <h3>onload</h3>
+    <button onload="this.innerHTML=Date()">Click </button>
+</body>
+
+</html>

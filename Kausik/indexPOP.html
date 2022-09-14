@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Index</title>
+</head>
+
+<body>
+    <h2>ARRAY POP & PUSH</h2>
+    </p>
+    <h3>Array = ["Banana", "Orange", "Apple", "Mango"]</h3>
+
+    <p>Enter a Array :
+        <input type="text" id="num">
+        <button onclick="displayarr1(2)">PUSH</button><button onclick="displayarr(1)">POP</button>
+    </p>
+
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"]
+        function displayarr() {
+            fruits.pop();
+            document.getElementById("demo1").innerHTML = fruits;
+        }
+
+        function displayarr1() {
+            var num = document.getElementById('num').value;
+            fruits.push(num);
+            document.getElementById("demo1").innerHTML = fruits;
+        }
+    </script>
+    <p id="demo1"></p>
+</body>
+
+</html>
